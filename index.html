@@ -613,12 +613,30 @@
                     </div>
                     <div class="md:w-1/2 p-10">
                         <form action="https://formspree.io/f/mpwrnwwk" method="POST">
-                          <input type="text" name="name" placeholder="Your Name" required>
-                          <input type="email" name="email" placeholder="Your Email" required>
-                          <input type="text" name="subject" placeholder="Subject" required>
-                          <textarea name="message" placeholder="Your Message" required></textarea>
-                          <button type="submit">Send</button>
-                       </form>
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input name="name" type="text" id="name" required class="text-gray-900 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input name="email" type="email" id="email" required class="text-gray-900 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                                <input name="subject" type="text" id="subject" required class="text-gray-900 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea name="message" id="message" rows="4" required class="text-gray-900 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                                Send Message
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
